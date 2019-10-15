@@ -73,3 +73,4 @@ gem 'simple_form'
 ## Gemfile for Rails 3+, Sinatra, and Merb
 gem 'will_paginate', '~> 3.1.7'
 gem "font-awesome-rails"
+gem 'devise'
