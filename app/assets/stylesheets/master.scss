@@ -34,12 +34,21 @@ body{
   font-family: 'Poppins', sans-serif;
 }
 
+.btn{
+    background: #2BD4AE;
+    border: 1px solid #2BD4AE;
+    color:white;
+}
+
+
+
+
 
 .digg_pagination {
   background: white;
   cursor: default;
   position: absolute; 
-  bottom: -280px;
+  bottom: -200px;
   left: 160px;
 
   /* self-clearing method: */ }
