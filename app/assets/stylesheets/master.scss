@@ -27,6 +27,7 @@ body{
 .navbar {
   background: image_url('prism.png');
   box-shadow: 0px 1px 3px #2a2a2a;
+  margin-bottom: 0;
 }
 
 .navbar-inverse .navbar-brand{
@@ -124,3 +125,33 @@ blockquote p {
     height: 1%; }
   *:first-child + html .digg_pagination {
     overflow: hidden; }
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+a:hover 
+{
+    color: inherit;
+     text-decoration:underline; 
+     cursor:pointer;  
+}
+
+.carousel-inner > .carousel-item > img, .carousel-inner > .carousel-item > a > img {
+  max-height: 550px;
+  margin: auto;
+  width: 50%;
+  border: 3px solid black;
+  padding: 10px;
+  display: block;
+}
+
+.carousel-caption{
+  font-family:"Segoe UI", Candara, "Bitstream Vera Sans", "DejaVu Sans", "Bitstream Vera Sans", "Trebuchet MS", Verdana, "Verdana Ref", sans-serif;
+  font-size: 60px;
+  font-weight: 100;
+  text-shadow: rgba(0, 0, 0, 0.95) 2px 2px;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+}
