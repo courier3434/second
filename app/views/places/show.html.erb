@@ -73,6 +73,7 @@
   </div>
 </div>
 
+<br /> <br />
 <!-- Button trigger modal -->
 <button type="button" class="btn btn-primary btn-lg float-right" data-toggle="modal" data-target="#myModal">
   Add a comment
@@ -94,4 +95,22 @@
         <small><%= comment.user.email %></small>
       </blockquote>
     </div>
+<% end %>
+
+<!-- Photos -->
+
+<%= simple_form_for @photo, url: place_photos_path(@place) do |f| %>
+  <%= f.input :caption %>
+  <%= f.input :picture %>
+  <%= f.submit "Add a Photo", class: 'btn btn-primary' %>
+<% end %>
+
+<% @place.photos.each do |photo| %>
+  <div>
+    <blockquote>
+      <b><%= photo.caption %></b>
+      <%= photo.picture image_tag %>
+      <small><%= photo.user.email %></small>
+    </blockquote>
+  </div>
 <% end %>

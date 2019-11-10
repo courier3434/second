@@ -1,7 +1,7 @@
-class Photo < ApplicationRecord
-  belongs_to :user
+class Photo < ActiveRecord::Base
+  mount_uploader :picture, PictureUploader
 
-  def create 
-    @photo = Photo.create
-  end
+  belongs_to :user
+  belongs_to :place
+  
 end
