@@ -140,7 +140,7 @@
   <div>
     <blockquote>
       <b><%= photo.caption %></b>
-      <%= photo.picture %>
+      <%= image_tag photo.picture.url %>
       <small><%= photo.user.email %></small>
     </blockquote>
   </div>
