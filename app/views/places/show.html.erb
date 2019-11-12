@@ -116,6 +116,7 @@
         </button>
         <h4 class="modal-title" id="myModalLabel">Add a Photo</h4>
       </div>
+
 <%= simple_form_for @photo, url: place_photos_path(@place) do |f| %>
         <div class="modal-body">
   <%= f.input :caption %>
@@ -124,8 +125,8 @@
         <div class="modal-footer">
           <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
   <%= f.submit "Add a Photo", class: 'btn btn-primary' %>
-
-  <% end %>
+<% end %>
+  
    </div>
 
   </div>
